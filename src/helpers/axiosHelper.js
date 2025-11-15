@@ -15,7 +15,7 @@ axiosInstance.defaults.withCredentials=true        //enable cookies base authent
 
 
 
-export const socket = io('http://localhost:8000', {
+export const socket = io('https://video-tube-backend-o56e.onrender.com', {
     withCredentials: true
 });
 
