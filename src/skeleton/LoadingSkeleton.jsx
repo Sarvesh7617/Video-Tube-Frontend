@@ -16,7 +16,7 @@ const LoadingSkeleton=({register=false})=>{
                         <input className={`${loadingSkeletonStyle}`} readOnly/>
                         <input className={`${loadingSkeletonStyle}`} readOnly/>
                         <input className={`${loadingSkeletonStyle}`} readOnly/>
-                        <Button className={`${loadingSkeletonStyle}`} readOnly/>
+                        <Button className={`${loadingSkeletonStyle} !border-none`} readOnly/>
                     </div>
                 </>
                 ):(
