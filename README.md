@@ -76,8 +76,8 @@ npm run dev
 ```
 
 
-# 📂 Project Structure
-
+## 📂 Project Structure
+```bash
 videoTube_Frontend                 
 ├── public/                        # Publicly served static files
 │   └── favicon.ico                # Browser tab icon
@@ -150,3 +150,4 @@ videoTube_Frontend
 ├── package-lock.json              # Dependency lock file
 ├── vite.config.js                 # Vite bundler config
 └── vercel.json                    # Vercel deployment config
+```
