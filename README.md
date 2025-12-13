@@ -52,30 +52,30 @@ Built with **React, Redux Toolkit, TailwindCSS, Vite**, and integrated with back
 
 ## ⚙️ Installation & Setup
 
-# 1. Clone the repository
+### 1. Clone the repository
 ```bash
 git clone (https://github.com/Sarvesh7617/Video-Tube-Frontend.git)
 ```
 
-# 2. Navigate to project directory
+### 2. Navigate to project directory
 ```bash
 cd navigate_to_dir
 ```
 
-# 3. Install dependencies
+### 3. Install dependencies
 ```bash
 npm install
 ```
 
-# 4. 🔐 Environment Variables
+### 4. 🔐 Environment Variables
 
-## Create a .env file in the root of your project and add your Appwrite credentials:
+#### Create a .env file in the root of your project and add your Appwrite credentials:
 ```bash
 VITE_BACKEND_URL="http://your_backend_localhost/api/v1"
 BACKEND_URL="http://your_backend_localhost"
 ```
 
-# 5. Run development server
+### 5. Run development server
 ```bash
 npm run dev
 ```
