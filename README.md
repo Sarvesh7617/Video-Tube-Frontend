@@ -24,29 +24,24 @@ Built with **React, Redux Toolkit, TailwindCSS, Vite**, and integrated with back
 
 
 ## 🚀 Features
-- **User Authentication** with JWT + bcrypt
-- **Video Uploads**:  
-  - Files first stored locally (video + thumbnail)  
-  - Uploaded to **Cloudinary**  
-  - Local files auto-deleted after upload  
-  - Real-time upload progress tracked via **Socket.io**
-- **Video Streaming** from Cloudinary
-- **Comment System** with pagination
-- **MongoDB** for scalable data storage
-
+- Responsive UI with **React + TailwindCSS**
+- **Redux Toolkit** for state management
+- **React Router** for navigation
+- **Infinite Scroll** for videos and comments (10 items per batch)
+- **Axios** for API communication
+- **React Toastify** for notifications
+- Real-time upload progress updates via **Socket.io client**
 ---
 
 
 
 ## 🛠️ Tech Stack
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- Multer (file uploads)
-- Cloudinary (video storage)
-- Socket.io (upload progress)
-- JWT + bcrypt (auth)
-
+- React 19.2
+- Redux Toolkit
+- TailwindCSS
+- Vite v7.2.7
+- Axios
+- Socket.io Client
 ---
 
 
@@ -81,3 +76,77 @@ npm run dev
 ```
 
 
+# 📂 Project Structure
+
+videoTube_Frontend                 
+├── public/                        # Publicly served static files
+│   └── favicon.ico                # Browser tab icon
+│
+├── src/                           # Main source code
+│   ├── assets/                    # logo image
+│   │   └── logo.webp
+│   │
+│   ├── components/                # Reusable UI components
+│   │   ├── channel/               # Channel‑related UI components
+│   │   │   ├── ChannelHeader
+│   │   │   └── ChannelNavigate
+│   │   ├── container/             # Layout container components
+│   │   │   └── Container
+│   │   ├── dashboard/             # Admin dashboard components
+│   │   │   ├── StateSection
+│   │   │   └── VideoTable
+│   │   ├── header/                # Header + navigation components
+│   │   │   ├── Header
+│   │   │   ├── Navbar
+│   │   │   ├── Search
+│   │   │   └── Sidebar
+│   │
+│   ├── config/                    # App configuration files
+│   │   └── config
+│   │
+│   ├── helpers/                   # Utility/helper functions
+│   │   ├── axiosHelper            # Axios wrapper for API calls
+│   │   └── timeAgo                # Time formatting helper
+│   │
+│   ├── pages/                     # All application pages
+│   │   ├── channel/               # Channel‑related pages
+│   │   │   ├── AdminDashboard
+│   │   │   ├── EditChannel
+│   │   │   ├── HomePage
+│   │   │   ├── LikedVideos
+│   │   │   ├── MySubscription
+│   │   │   ├── SearchVideo
+│   │   │   ├── TermandCondition
+│   │   │   ├── VideoDetail
+│   │   │   └── WatchDetail
+│   │   └── index.js               # Page export file
+│   │
+│   ├── skeleton/                  # Skeleton loaders for UI
+│   │   ├── HomeSkeleton
+│   │   └── LoadingSkeleton
+│   │
+│   ├── store/                     # Redux store & slices
+│   │   ├── Slice/                 # All Redux slices
+│   │   │   ├── authSlice
+│   │   │   ├── commentSlice
+│   │   │   ├── dashboardSlice
+│   │   │   ├── likesSlice
+│   │   │   ├── subscriptionSlice
+│   │   │   ├── tweetSlice
+│   │   │   ├── userSlice
+│   │   │   └── videoSlice
+│   │   └── store                  # Redux store configuration
+│   │
+│   ├── App.jsx                    # Root React component
+│   ├── App.css                    # Global app styles
+│   ├── main.jsx                   # App entry point
+│   └── index.css                  # Global CSS
+│
+├── .env                           # Environment variables
+├── .gitignore                     # Git ignore rules
+├── index.html                     # Main HTML template
+├── eslint.config.js               # ESLint configuration
+├── package.json                   # Dependencies & scripts
+├── package-lock.json              # Dependency lock file
+├── vite.config.js                 # Vite bundler config
+└── vercel.json                    # Vercel deployment config
