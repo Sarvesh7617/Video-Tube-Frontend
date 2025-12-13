@@ -25,7 +25,7 @@ const LoadingSkeleton=({register=false})=>{
                     <div className="flex flex-col gap-5">
                         <input className={`${loadingSkeletonStyle}`} readOnly/>
                         <input className={`${loadingSkeletonStyle}`} readOnly/>
-                        <Button className={`${loadingSkeletonStyle}`} readOnly/>
+                        <Button className={`${loadingSkeletonStyle} !border-none`} readOnly/>
                     </div>
                 </>
                 )}
