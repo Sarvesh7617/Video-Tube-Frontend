@@ -49,7 +49,7 @@ Built with **React, Redux Toolkit, TailwindCSS, Vite**, and integrated with back
 
 ### 1. Clone the repository
 ```bash
-git clone (https://github.com/Sarvesh7617/Video-Tube-Frontend.git)
+git clone https://github.com/Sarvesh7617/Video-Tube-Frontend.git
 ```
 
 ### 2. Navigate to project directory
