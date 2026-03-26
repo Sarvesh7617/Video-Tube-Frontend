@@ -78,7 +78,7 @@ npm run dev
 
 ## 🔗 Live Website
 
-👉 [Click here to visit my portfolio](https://video-tube-sigma.vercel.app/)
+👉 [Click here to visit project](https://video-tube-sigma.vercel.app/)
 
 
 
